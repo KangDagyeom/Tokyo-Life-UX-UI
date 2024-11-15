@@ -1,0 +1,440 @@
+@import url('https://use.fontawesome.com/releases/v6.4.2/css/all.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-family: Poppins;
+}
+body {
+    
+    background-color: #f5f5f5;
+}
+
+
+
+
+
+
+header .sale-header {
+    background-color: #c92027;
+    padding: 0px 15px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+header .sale-action .link a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+header button {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.568);
+    color: white;
+    border: none;
+    display: flex;
+
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    padding: 6px;
+    font-weight: bold;
+    transition: 0.6s ease;
+    border-radius: 5px;
+}
+
+.sale-header .prev {
+    left: 0;
+    margin-left: 80px;
+}
+
+.sale-header .next {
+    right: 0;
+    margin-right: 80px;
+}
+
+.ontop-container {
+    background-color: #f8f1e4;
+    height: 60px;
+    display: flex;
+    
+}
+
+.ontop-container .logo img {
+    padding: 15px;
+    margin-left: 50px;
+}
+
+.ontop-container .store-search input {
+    margin: 12px;
+    width: 650px;
+    padding: 4px 4px 4px 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 100px;
+}
+
+.ontop-container .store-search button {
+    background-color: #c92127;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    position: absolute;
+    left: 77%;
+    top: 23%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.ontop-container .store-search input:focus {
+    outline: none;
+    border: none;
+}
+
+.ontop-container .row-information {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    margin: 20px;
+    width: 100px;
+    margin-left: 100px;
+
+}
+
+.ontop-container .row-information button {
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-color: #f8f1e4;
+}
+
+.truck:hover button {
+    color: #c92127;
+    transform: scale(1.5);
+}
+
+
+.user:hover button {
+    color: #c92127;
+    transform: scale(1.5);
+}
+
+
+.cart-count {
+    position: absolute;
+    top: 15px;
+    right: 170px;
+
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding: 1px 5px;
+    font-size: 10px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.cart-count:hover {
+    transform: scale(1.5);
+    font-weight: bold;
+}
+
+
+.nav-container {
+    background-color: #ffff;
+    box-shadow: 0 0 1px rgb(0 0 0 / 0.2);
+    opacity: 1;
+    height: 70px;
+}
+
+.nav-container .menu {
+    align-items: center;
+    display: flex;
+    position: relative;
+    margin-left: 50px;
+}
+
+.gom {
+    position: relative;
+    display: flex;
+}
+
+.gom p {
+
+    align-items: center;
+    margin: 2px;
+}
+
+.menu .nav-item {
+    list-style: none;
+    display: flex;
+    margin: 15px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.menu .nav-item:hover p {
+    color: #c92127;
+}
+
+.nav-item a,
+.nav-item a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.nav-container li img {
+    width: 20px;
+}
+header {
+    height: 40px; /* Chiều cao của header */
+}
+
+.container {
+    position: fixed;
+    top: 40px; /* Vị trí mặc định khi ở đầu trang */
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    transition: top 0.3s ease; /* Thêm hiệu ứng chuyển động */
+}
+
+
+
+
+
+.web-banner {}
+
+.swiper .slide {
+    margin-top: 180px;
+    margin-left: 80px;
+
+}
+
+.swiper-wrapper {
+    position: relative;
+    margin: auto;
+}
+
+
+.fade {
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.button-prev,
+.button-next {
+    cursor: pointer;
+    position: absolute;
+    top: 450px;
+    width: auto;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.671);
+    font-weight: bold;
+    transition: 0.6s ease;
+    border: none;
+    color: #ffff;
+}
+
+.button-prev {
+    left: 0;
+    margin-left: 80px;
+}
+
+.button-next {
+    right: 0;
+    margin-right: 69px;
+}
+
+.dot-container {
+    height: 100px;
+    top: 50px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    padding: 1px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    transition: background-color 0.6s ease;
+    border: 1px solid black;
+
+}
+
+.active {
+    background-color: #c92127;
+}
+
+.web-content .content-container h1 {
+    align-items: center;
+    text-align: center;
+    color: #c92127;
+    font-size: 25px;
+
+}
+
+.girl-container,
+.boy-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 45px;
+}
+
+.girl-content a,
+.boy-content a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.girl-content a img,
+.boy-content a img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.girl-content,
+.boy-content {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* .details-voucher h1 {
+    color: #c92127;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.voucher-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 130px;
+    margin-top: 60px;
+}
+
+.voucher-items {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffff;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.2);
+    opacity: 1;
+    line-height: 25px;
+    border-radius: 5px;
+}
+.voucher-items strong{
+    font-weight: bolder;
+} */
+
+.details-voucher {
+    max-width: 400px; /* Adjust based on your design needs */
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.details-voucher h1 {
+    font-size: 25px;
+    color: #c92127;
+    margin-bottom: 20px;
+}
+
+.voucher-container {
+    display: flexbox;
+    flex-direction: row;
+    gap: 50px; /* Spacing between each voucher item */
+}
+
+.voucher-items {
+    display: flex;
+    flex-direction: row;
+    float: 1;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    
+}
+
+.voucher-right {
+    
+    text-align: left;
+}
+
+.voucher-right strong {
+    color: #BA372A;
+    font-size: 16px;
+}
+
+.voucher-right p, .voucher-right a p {
+    margin: 5px 0;
+    color: #000;
+}
+
+.voucher-right p:last-child {
+    color: #c92127;
+}
+
+.voucher-left {
+    display: flex;
+    align-items: center;
+    
+    padding-left: 15px;
+    border-left: 2px dashed #ddd;
+}
+
+.voucher-left p {
+    color: #c92127;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #c92127;
+    padding: 8px;
+}
+
+
+

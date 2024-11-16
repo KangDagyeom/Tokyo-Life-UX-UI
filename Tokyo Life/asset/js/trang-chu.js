@@ -31,6 +31,21 @@ function autoSlide() {
   slideNext = setInterval(next, 5000);
 }
 autoSlide();
+// Lắng nghe sự kiện click trên toàn bộ trang
+function handleCopy(element) {
+  // Thay đổi màu nền của thẻ cha
+  element.style.backgroundColor = "#c92127";
+
+  // Tìm thẻ <p> bên trong và thay đổi nội dung
+  const textElement = element.querySelector("p");
+  if (textElement) {
+    textElement.textContent = "Đã sao chép";
+    textElement.style.color = "#fff"; // Thay đổi màu chữ nếu cần
+    
+  }
+}
+
+
 
 
 

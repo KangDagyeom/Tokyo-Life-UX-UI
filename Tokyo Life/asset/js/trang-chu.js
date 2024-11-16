@@ -31,19 +31,24 @@ function autoSlide() {
   slideNext = setInterval(next, 5000);
 }
 autoSlide();
-// Lắng nghe sự kiện click trên toàn bộ trang
-function handleCopy(element) {
-  // Thay đổi màu nền của thẻ cha
-  element.style.backgroundColor = "#c92127";
 
-  // Tìm thẻ <p> bên trong và thay đổi nội dung
+function handleCopy(element) {
+
   const textElement = element.querySelector("p");
   if (textElement) {
+
+    textElement.style.color = "#fff";
     textElement.textContent = "Đã sao chép";
-    textElement.style.color = "#fff"; // Thay đổi màu chữ nếu cần
-    
+    textElement.style.backgroundColor = "#c92127";
+    setTimeout(() => {
+      textElement.style.color = "#c92127";
+      textElement.textContent = "Sao chép";
+      textElement.style.backgroundColor = "transparent";
+    }, 3000);
   }
 }
+
+
 
 
 
